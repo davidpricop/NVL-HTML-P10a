@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-ES">
+  <head>
+    <meta charset="utf-8">
+    <title>Práctica de Formularios (II)</title>
+  </head>
+  <body>
+    <form method="post" action="miservidor.php">
+        <div>
+            <h1>Encuesta de Satisfacción</h1>
+        </div>
+        <div>
+          <label for=”cp”>Código Postal:</label>
+          <input id="cp" type=”text” placeholder="CP">
+        </div><br>
+       <div>
+          <label for=”satisfaccion”>Nivel de Satisfacción con el producto:</label><br>
+          1<input type="radio" name="satis" value="1">
+          2<input type="radio" name="satis" value="2">
+          3<input type="radio" name="satis" value="3">
+          4<input type="radio" name="satis" value="4">
+          5<input type="radio" name="satis" value="5">
+      </div><br>
+      <div>
+          <label for="mail">Email:</label>
+          <input name="mail" type=”email” placeholder="Email">       
+      </div><br>
+      <div>
+          <label for=”hermanos”>Puntos positivos del producto:</label><br>
+          <textarea name="puntospositivos" id="puntospositivos" cols="30" rows="5" placeholder="Danos tu opinión"></textarea>
+      </div>
+      <div>
+        <label for=”comentario”>Puntos negativos del producto:</label><br>
+        <textarea name="puntospositivos" id="puntospositivos" cols="30" rows="5" placeholder="Nos importa tu opinión"></textarea>
+      </div><br>
+      <div>
+          <label for="caracte">Lista de caracteristicas:</label><br>
+          <select name="caracte" id="caracte">
+              <option value="Excelente">Excelente</option>
+              <option value="Bueno">Bueno</option>
+              <option value="Regular">Regular</option>
+              <option value="Pésimo">Pésimo</option>
+          </select>
+      </div><br>
+      <div>
+        <label for="fuertes">Lista de fuertes:</label><br>
+        Excelente<input type="radio" name="fuertes" value="Excelente">
+        Bueno<input type="radio" name="fuertes" value="Bueno">
+        Regular<input type="radio" name="fuertes" value="Regular">
+        Pésimo<input type="radio" name="fuertes" value="Pésimo">          
+      </div><br>
+        <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
